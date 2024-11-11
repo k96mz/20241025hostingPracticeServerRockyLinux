@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This page is for hosting practice 👍</h1>
+    <h2>Delivery of pbf tiles as static hosting</h2>
+    <p>
+      You have "htdocs" folder for static hosting. If your vector tiles(pbf) are
+      stored in "htdocs" folder, the VT can be accessible at: <br />
+      http://localhost:3000/VTpractice/1/1/1.pbf<br />
+      <br />
+      For example, you can get pbf tile at: <br />
+      <a href="./VTpractice/1/1/1.pbf">./VTpractice/1/1/1.pbf</a>
+    </p>
+    <h2>Hosting Mbtiles</h2>
+    <p>
+      If you have mbtiles/VTpracticegzip.mbtiles for hosting mbtiles, the VT can
+      be accessible at: <br />
+      http://localhost:3000/VT/zxy/VTpracticegzip/1/1/1.pbf<br />
+      <br />
+      For example, you can get pbf tile at: <br />
+      <a href="./VT/zxy/VTpracticegzip/1/1/1.pbf"
+        >./VT/zxy/VTpracticegzip/1/1/1.pbf</a
+      >
+    </p>
+    <br />
+    <h3>Check the Map with the VT</h3>
+    <p>
+      Regarding static folder, you can check the map with this HTML file: <br />
+      <a href="./map/mapO-pbf.html">./map/mapO-pbf.html</a><br /><br />
+      for HTTPS access(This doesn't work maybe because we use spdy) <br />
+      <a href="./map/mapOs-pbf.html">./map/mapOs-pbf.html</a>
+    </p>
+    <p>
+      Regarding mbtiles, you can check the map with this HTML file: <br />
+      <a href="./map/mapO-mbtiles.html">./map/mapO-mbtiles.html</a><br /><br />
+      for HTTPS access(You may reload sometimes to show the map)<br />
+
+      <a href="./map/mapOs-mbtiles.html">./map/mapOs-mbtiles.html</a>
+    </p>
+  </body>
+</html>

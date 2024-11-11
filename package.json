@@ -1,0 +1,23 @@
+{
+  "name": "20241025hostingpracticeserverrockylinux",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "k96mz",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mapbox/mbtiles": "^0.12.1",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "hh-mm-ss": "^1.2.0",
+    "hjson": "^3.2.2",
+    "morgan": "^1.10.0",
+    "spdy": "^4.0.2",
+    "winston": "^3.15.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}

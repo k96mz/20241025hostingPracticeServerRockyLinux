@@ -1,0 +1,9 @@
+{
+  htdocsPath: htdocs
+  port: 3000
+  logDirPath: log
+  morganFormat: tiny
+  mbtilesDir: mbtiles
+  privkeyPath: ./key/privkey.pem
+  fullchainPath: ./key/cert.pem
+}

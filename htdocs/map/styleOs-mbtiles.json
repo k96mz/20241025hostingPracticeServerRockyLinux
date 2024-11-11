@@ -1,0 +1,57 @@
+{
+  "version": 8,
+  "name": "Simple Style",
+  "metadata": { "maputnik:renderer": "mlgljs" },
+  "center": [132.652106, 34.418256],
+  "zoom": 7,
+  "sources": {
+    "natural": {
+      "type": "vector",
+      "tiles": ["https://k96mz.net:3000/VT/zxy/VTpracticegzip/{z}/{x}/{y}.pbf"]
+    }
+  },
+  "layers": [
+    {
+      "id": "陸域",
+      "type": "fill",
+      "source": "natural",
+      "source-layer": "landmass",
+      "minzoom": 0,
+      "maxzoom": 15,
+      "paint": {
+        "fill-color": "rgba(170, 128, 86, 1)",
+        "fill-opacity": 0.5,
+        "fill-antialias": false,
+        "fill-outline-color": "rgba(242, 15, 15, 1)",
+        "fill-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "河川",
+      "type": "line",
+      "source": "natural",
+      "source-layer": "riverl",
+      "minzoom": 0,
+      "maxzoom": 15,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "line-miter-limit": 2
+      },
+      "paint": {
+        "line-color": "rgba(62, 70, 250, 1)",
+        "line-opacity": 1,
+        "line-width": 5
+      }
+    },
+    {
+      "id": "海岸線",
+      "type": "line",
+      "source": "natural",
+      "source-layer": "coastl",
+      "maxzoom": 15,
+      "paint": { "line-color": "rgba(46, 45, 45, 1)", "line-width": 2 }
+    }
+  ],
+  "id": "wxp72pb"
+}

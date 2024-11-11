@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Display a map</title>
+    <meta
+      property="og:description"
+      content="Initialize a map in an HTML element with MapLibre GL JS."
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../maplibre-gl.css" />
+    <script src="../maplibre-gl.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body,
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <script>
+      const map = new maplibregl.Map({
+        container: "map", // container id
+        style: "./styleOs-pbf.json", // style URL
+        center: [132.652106, 34.418256], // starting position [lng, lat]
+        zoom: 4, // starting zoom
+        maplibreLogo: true,
+        hash: true,
+      });
+
+      //UI
+      map.addControl(new maplibregl.NavigationControl(), "bottom-right");
+      map.addControl(new maplibregl.ScaleControl());
+
+      //debug
+      map.showTileBoundaries = true;
+      map.showCollisionBoxes = false;
+    </script>
+  </body>
+</html>
