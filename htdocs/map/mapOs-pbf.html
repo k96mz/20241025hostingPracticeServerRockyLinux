@@ -8,8 +8,13 @@
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../maplibre-gl.css" />
-    <script src="../maplibre-gl.js"></script>
+    <!-- <link rel="stylesheet" href="../maplibre-gl.css" />
+    <script src="../maplibre-gl.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/maplibre-gl@4.1.3/dist/maplibre-gl.css"
+    />
+    <script src="https://unpkg.com/maplibre-gl@4.1.3/dist/maplibre-gl.js"></script>
     <style>
       body {
         margin: 0;
@@ -27,8 +32,8 @@
     <div id="map"></div>
     <script>
       const map = new maplibregl.Map({
-        container: "map", // container id
-        style: "./styleOs-pbf.json", // style URL
+        container: 'map', // container id
+        style: './styleOs-pbf.json', // style URL
         center: [132.652106, 34.418256], // starting position [lng, lat]
         zoom: 4, // starting zoom
         maplibreLogo: true,
@@ -36,7 +41,7 @@
       });
 
       //UI
-      map.addControl(new maplibregl.NavigationControl(), "bottom-right");
+      map.addControl(new maplibregl.NavigationControl(), 'bottom-right');
       map.addControl(new maplibregl.ScaleControl());
 
       //debug
